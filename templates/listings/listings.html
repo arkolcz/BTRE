@@ -37,7 +37,7 @@
                 <div class="listing-heading text-center">
                   <h4 class="text-primary">{{ listing.title }}</h4>
                   <p>
-                    <i class="fas fa-map-marker text-secondary"></i> {{ listing.address }}</p>
+                    <i class="fas fa-map-marker text-secondary"></i> {{ listing.city }}</p>
                 </div>
                 <hr>
                 <div class="row py-2 text-secondary">
@@ -81,7 +81,6 @@
               {% if listings.has_previous %}
                 <li class="page-item">
                   <a href="?page={{ listings.previous_page_number }}" class="page-link">&laquo;
-
                   </a> 
                 </li>
                 {% else %}
