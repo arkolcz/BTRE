@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -139,5 +140,11 @@ MEDIA_URL = '/media/'
 # Messages
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
-    messages.ERROR: 'error'
+    messages.ERROR: 'danger'
 }
+
+EMAIL_HOST = 'smtp.dummy.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'dummy@dummy.com'
+EMAIL_HOST_PASSOWRD = 'dummypass'
+EMAIL_USTE_TLS=True
